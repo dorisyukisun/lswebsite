@@ -1070,7 +1070,7 @@ p.minititle {
     position: relative;
     padding-top: 50px;
 }
-
+/*
 .nameuser:before {
     content: '';
     width: 100px;
@@ -1080,6 +1080,7 @@ p.minititle {
     right: 200px;
     top: 60px;
 }
+    */
 
 .navigation-testi {
     display: inline-block;
