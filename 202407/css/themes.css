@@ -269,23 +269,24 @@ img.img-load {
 */
 
 .burger {
+    display: flex;
+    outline: none;
     height: 40px;
-    width: 40px;
+    width: 20px;
     border: 0px;
-    padding: 10px;
-    margin:0px;
+    padding: 20px;
+    margin:10px;
     background: transparent;
     transition: all 250ms ease-out;
     cursor: pointer;
-    
 }
 
 .burger:before,
 .burger:after {
     content: '';
     width: 30px;
-    height: 2px;  
-    position:absolute;
+    height: 2px;
+    position: absolute;
     background: #fff;
     transition: all 250ms ease-out;
     will-change: transform;
