@@ -276,10 +276,10 @@ img.img-load {
 
 .burger:before,
 .burger:after {
-    content: '';
+    ontent: '';
     width: 30px;
-    height: 2px;
-    position: absolute;
+    height: 2px;  
+    position:absolute;
     background: #fff;
     transition: all 250ms ease-out;
     will-change: transform;
