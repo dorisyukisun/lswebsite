@@ -264,16 +264,15 @@ img.img-load {
 */
 
 .burger {
-    display: flex;
-    outline: none;
     height: 40px;
     width: 40px;
-    border: 30px;
+    border: 0px;
     padding: 10px;
-    margin:5px;
+    margin:0px;
     background: transparent;
     transition: all 250ms ease-out;
     cursor: pointer;
+    
 }
 
 .burger:before,
