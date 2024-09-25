@@ -1,0 +1,39 @@
+server:
+  port: 8081
+  servlet:
+    context-path: /lswebsite  # 設定網站的上下文路徑
+
+spring:
+  mvc:
+    hiddenmethod:
+      filter:
+        enabled: true  # 启用表单中的隐藏方法（如 PUT、DELETE 支持）
+    static-path-pattern: /static/**  # 靜態資源路徑模式
+  thymeleaf:
+    cache: false  # 禁用模板緩存（開發環境）
+    mode: HTML
+    encoding: UTF-8
+    prefix: classpath:/templates/  # 模板前綴
+    suffix: .html  # 模板後綴
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/lswebsite?serverTimezone=UTC&characterEncoding=utf-8&useUnicode=true             
+    username: root
+    password: 12345678
+  jpa:
+    database: MYSQL
+    show-sql: true
+    hibernate:
+      ddl-auto: update  
+    properties:
+      hibernate:
+        enable_lazy_load_no_trans: true
+        dialect: org.hibernate.dialect.MySQL8Dialect
+        format_sql: true  
+  web:
+    resources:
+      static-locations: 
+        - classpath:/static/admin/    # 後台靜態資源
+        - classpath:/static/frontend/ # 前台靜態資源
+
+
